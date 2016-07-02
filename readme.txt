@@ -1,0 +1,3 @@
+In the third part of the project, I added a new model based on tenure. The tenure model calculates democrate's votes based on the Field poll and Census info. 
+
+Now that we have four models of poll prediction, the combined prediction from the four models should be more accurate than individual models. For combined calculation, I used a weight of 0.2 for Tenure Model, 0.2 for Gender Model, 0.3 for Age Model, and 0.3 for Race Model. The total of these models would be the prediction for Combined Model.
