@@ -1,4 +1,4 @@
-#dashboard, #modelOptions, #dataOptions{
+#modelOptions, #dataOptions{
     background-color: #ffe6f2;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
@@ -6,8 +6,13 @@
     border-top-left-radius: 15px;
 }
 
-#dashboard .blocksBackground, #scale{
-    background-color: #ffe6f2;
+#dashboard, #stateBlocks{
+	margin: auto;
+	max-width: 1200px;
+}
+
+#dashboard, #dashboard .blocksBackground, #scale{
+    background-color: #ffeee6;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;

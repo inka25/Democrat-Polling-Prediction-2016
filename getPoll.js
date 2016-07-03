@@ -4,11 +4,8 @@ var request = require("request");
 function listResponse(body,response) {
     pollList = JSON.parse(body);
 
-    console.log(pollList);
-
     questions = pollList[0].questions;
 
-    console.log("questions YAYAYAYA",questions);
     contest = "2016 California Democratic Presidential Primary";
     for (var j=0; j<questions.length; j++) {
     	console.log(questions[j].name);

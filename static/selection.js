@@ -134,9 +134,13 @@ function updateScale(model){
 }
 
 function printPrediction(result){
+
     var dashboardNames = document.getElementById("dashboardNames");
     var dashboardValues = document.getElementById("dashboardValues");
-    if(dashboardNames.childNodes.length == 9){
+
+    if(dashboardNames.childNodes.length > initialLength){
+        console.log(initialLength);
+        console.log(dashboardNames.childNodes.length);
         for (var i = 0; i < 4; i++){
             dashboardNames.removeChild(dashboardNames.lastChild);
             dashboardValues.removeChild(dashboardValues.lastChild);

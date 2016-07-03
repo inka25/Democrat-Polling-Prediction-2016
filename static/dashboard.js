@@ -1,4 +1,5 @@
 makeRequest("HuffPo", printInfo);
+var initialLength = 0;
 
 function printInfo(result){
 
@@ -31,6 +32,7 @@ function printInfo(result){
 	dashboard.appendChild(names);
 	dashboard.appendChild(votesValues);
 
+	initialLength = document.getElementById("dashboardNames").childNodes.length;
 }
 
 

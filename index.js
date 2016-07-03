@@ -6,7 +6,7 @@ var request = require("request");
 
 // Will serve files from "public" directory
 // Files from this server are not cached (to make debugging easier)
-var staticFileServer = new statix.Server('./public',{cache: 0});
+var staticFileServer = new statix.Server('./static',{cache: 0});
 
 
 function handler (request,response) {
